@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Wehire.ai</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="slider.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header_tab">
+            <img src="static/Header/Logo.png">
+            <div class="selectors">
+                <p class="header_selectors">Employers</p>
+                <p class="header_selectors">Candidates</p>
+                <p class="header_selectors">Educators</p>
+            </div>
+            <div class="login">
+                <p class="header_selectors">Log in</p>
+                <button class="green-round-btn" id="sign_up">Sign up</button>
+            </div>
+        </div>
+        <div class="info">
+            <p class="header-heavy">Hiring with<br>an Emotional AI</p>
+            <p class="subheader-heavy">Meet the best candidates with your top-performers’ mix of aptitudes and traits,
+                based on 10,000+ data points of real-time behaviour and emotions
+                collected via game-based assessment</p>
+            <button class="green-round-btn">Learn more</button>
+        </div>
+    </div>
+    <div name="problems" class="chapter-white">
+        <p class="header-light">Hiring has great potential for improvement</p>
+        <div id="grid">
+            <img src="static/Problems/problem1.png">
+            <img src="static/Problems/problem2.png">
+            <img src="static/Problems/problem3.png">
+            <p class="subheader-light-black"><b>46%</b> of new hires fail within 18 months</p>
+            <p class="subheader-light-black">Replacement costs up to <b>$7,650</b> per employee in US</p>
+            <p class="subheader-light-black">New generation change jobs more frequently, up to <b>10-14</b> by the age of 38</p>
+        </div>
+    </div>
+    <div name="description" class="chapter-grey">
+        <p class="header-light">Intelligent. Data-driven. Efficient.</p>
+        <p class="subheader-light-black">WeHire.ai is a data-driven smart hiring solution - the synergy of <br>psychometric, Artificial Intellegence and game technology</p>
+        <div id="grid-cont">
+            <div id="grid_description">
+                <div id="block1">
+                    <p class="subheader-light-black" id="block1_header">Psychometric</p>
+                    <div>
+                        <p class="small-text-white">Detailed psychometric assessment</p>
+                        <p class="small-text-white">Statistically validated data</p>
+                    </div>
+                </div>
+                <div id="block2">
+                    <p class="subheader-light-black" id="block1_header">Emotion AI</p>
+                    <div>
+                        <p class="small-text-white">Neural networks analysis</p>
+                        <p class="small-text-white">Automated machine learning algorithms</p>
+                        <p class="small-text-white">Candidate’s real-time emotions</p>
+                    </div>
+                </div>
+                <div id="block3">
+                    <p class="subheader-light-black" id="block1_header">Game - tech</p>
+                    <div>
+                        <p class="small-text-white">23 neuroscience-based games</p>
+                        <p class="small-text-white">10,000+ data points of behaviour collected</p>
+                    </div>
+                </div>
+            <div id="romb-cont">
+                <img id="logo_romb" src="static/Description/Logo_romb.png">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div name="features" class="chapter-white">
+        <div id="features_header">
+            <p class="header-light">Your gains as</p>
+            <div id="switcher-cont">
+                <div class="selector-buttons" id="sw1" onclick="CurrentSlide(0)"><p>employer</p></div>
+                <div class="selector-buttons" id="sw2" onclick="CurrentSlide(1)"><p>candidate</p></div>
+                <div class="selector-buttons" id="sw3" onclick="CurrentSlide(2)"><p>educator</p></div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="item">
+                <div class="line1-cont">
+                    <img src="static/Features/1-3.png">
+                    <div class="feature-line-3pt">
+                        <p class="subheader-light-black">Efficient talent-acquisition and management</p>
+                        <p class="subheader-light-black">Strong corporate culture</p>
+                        <p class="subheader-light-black">Improvement in candidates quality</p>
+                    </div>
+                </div>
+                <div class="line1-cont">
+                    <img src="static/Features/4-6.png">
+                    <div class="feature-line-3pt">
+                        <p class="subheader-light-black">Lower employee turnover </p>
+                        <p class="subheader-light-black">Reduction of bad hire costs, operational burden and recruitment timing </p>
+                        <p class="subheader-light-black">Growth of brand loyalty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="line1-cont">
+                    <img src="static/Features/1-2.png">
+                    <div class="feature-line-2pt">
+                        <p class="subheader-light-black">Great personalization</p>
+                        <p class="subheader-light-black">100% prompt feedback </p>
+                    </div>
+                </div>
+                <div class="line1-cont">
+                    <img src="static/Features/3-4.png">
+                    <div class="feature-line-2pt">
+                        <p class="subheader-light-black" id="feature-line-cell">Detailed personal profile </p>
+                        <p class="subheader-light-black" id="feature-line-cell">Enjoyable stress-free experience </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="line1-cont">
+                    <img src="static/Features/1-2.png">
+                    <div class="feature-line-2pt">
+                        <p class="subheader-light-black" id="feature-line-cell">Higher students’ academic results, satisfaction and lower dropout rates</p>
+                        <p class="subheader-light-black" id="feature-line-cell">More internship and employment offers, better perspectives to find a fulfilling jobs</p>
+                    </div>
+                </div>
+                <div class="line1-cont">
+                    <img src="static/Features/3-4.png">
+                    <div class="feature-line-2pt">
+                        <p class="subheader-light-black" id="feature-line-cell">Students’ academic and career success lead to higher ratings of educational institution and programs </p>
+                        <p class="subheader-light-black" id="feature-line-cell">The higher ratings, the better students, and the more research budgets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var i;
+    var selectors = document.querySelectorAll('.selector-buttons');
+    var select_text = document.querySelectorAll('.selector-buttons p');
+    var slides = document.querySelectorAll('.item');
+
+    select_text[0].style.color = 'white';
+    selectors[0].className = 'selected-button';
+    slides[0].className = 'item showing';
+
+    function CurrentSlide(n) {
+        for (i=0; i < slides.length; i++){
+            slides[i].className = 'item';
+            selectors[i].className = 'selector-buttons';
+            select_text[i].style.color = '#9B9B9B';
+        }
+        slides[n].className = 'item showing';
+        selectors[n].className = 'selected-button';
+        select_text[n].style.color = 'white';
+    }
+</script>
+</body>
+</html>
+

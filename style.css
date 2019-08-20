@@ -1,0 +1,369 @@
+html body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Header */
+
+.header{
+    width: 100%;
+    height: 841px;
+    background-image: url("static/Header/Header background 3.png");
+    background-size: cover;
+}
+
+.header_tab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.selectors{
+    display: flex;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    width: 160px;
+    height: 35px;
+}
+
+.header_selectors{
+    font-family: Avenir-Book;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    padding: 0 10px 0 10px;
+
+}
+
+.green-round-btn{
+    background: #43BA84;
+    border-radius: 28.5px;
+    border: none;
+    font-family: Avenir-Roman;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+#sign_up{
+    width: 84px;
+    height: 37px;
+}
+
+.info{
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.info button{
+    margin-top: 30px;
+    width: 180px;
+    height: 54px;
+}
+
+.header-heavy{
+    font-family: Avenir-Heavy;
+    font-size: 46px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 58px;
+    width: 350px;
+}
+
+.subheader-heavy{
+    opacity: 0.6;
+    font-family: Avenir-Book;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+    width: 500px;
+}
+
+
+
+/* Problems */
+.chapter-white{
+    width: 100%;
+}
+
+.header-light{
+    padding-top: 100px;
+    font-family: Avenir-Light;
+    font-size: 46px;
+    color: #43484D;
+    letter-spacing: -1.77px;
+    text-align: center;
+    line-height: 58px;
+}
+
+.subheader-light-black{
+    font-family: Avenir-Book;
+    font-size: 22px;
+    color: #43484D;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.small-text-white{
+    font-family: Avenir-Roman;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 16px;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 8vw;
+    grid-row-gap: 20px;
+    padding: 70px 10px 0 10px;
+}
+
+#grid img{
+    width: 380px;
+    align-self: baseline;
+    justify-self: center;
+}
+
+#grid p{
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Description */
+
+.chapter-grey{
+    background: #FAFAFA;
+}
+
+#grid-cont{
+    width: 80%;
+    padding: 40px 0px 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#grid_description{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-auto-columns: 1fr;
+}
+
+#block1, #block2, #block3{
+    width: 100%;
+    height: 268px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:  0px;
+    justify-content: flex-start;
+    border-radius: 4px;
+    position: relative;
+}
+
+#block1_header{
+    position: absolute;
+    padding-top: 90px;
+}
+
+#block1{
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#block2{
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+#block3{
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+#romb-cont{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 232px;
+}
+
+#logo_romb{
+    width: 173px;
+    height: 173px;
+}
+
+#block1:hover{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+    url("static/Description/psy_back.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    transition: all .4s ease-out;
+}
+
+#block2:hover{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+    url("static/Description/emotions_back.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    transition: all .4s ease-out;
+}
+
+#block3:hover{
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+    url("static/Description/game_back.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    transition: all .4s ease-out;
+}
+
+#block1:hover #block1_header, #block2:hover #block1_header, #block3:hover #block1_header{
+    color: #FFFFFF;
+    font-size: 46px;
+    padding-top: 10px;
+    transition: all .8s ease-in-out;
+    margin-top: 15px;
+    opacity: 1;
+}
+
+#block1 div, #block2 div, #block3 div{
+    opacity: 0;
+}
+
+#block1:hover div, #block2:hover div, #block3:hover div{
+    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 2.5s;
+    opacity: 1;
+}
+
+
+/* Features */
+
+#features_header{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#features_header p{
+    margin: 0;
+    padding: 0;
+}
+
+#switcher-cont{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 454px;
+    height: 53px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(235,235,235);
+    border-radius: 100px;
+    flex-grow: 1;
+}
+
+#sw1, #sw2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: Avenir-Light;
+    font-size: 20px;
+    color: #9B9B9B;
+}
+
+#sw3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: Avenir-Light;
+    font-size: 20px;
+    color: #9B9B9B;
+}
+
+#sw1:hover, #sw2:hover, #sw3:hover {
+    cursor: pointer;
+    font-family: Avenir-Heavy;
+}
+
+
+.selected-button{
+    background:#43BA84;
+    border-radius: 100px;
+}
+
+.line1-cont img{
+    padding-top: 100px;
+    width: 100%;
+}
+
+.feature-line-3pt{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feature-line-2pt{
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.slider {
+    position: relative;
+}
+
+.item{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+#feature-line-cell{
+    margin: 0 auto;
+    width: 60%;
+}
