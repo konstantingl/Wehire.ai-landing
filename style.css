@@ -40,7 +40,12 @@ html body{
     color: #FFFFFF;
     letter-spacing: 0.2px;
     padding: 0 10px 0 10px;
+}
 
+.header_selectors:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
 }
 
 .green-round-btn{
@@ -52,6 +57,15 @@ html body{
     color: #FFFFFF;
     letter-spacing: 0.2px;
     text-align: center;
+    transition: all 0.4s ease 0s;
+}
+
+.green-round-btn:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
 }
 
 #sign_up{
@@ -133,19 +147,23 @@ html body{
     letter-spacing: 0.2px;
     text-align: center;
     line-height: 16px;
+    margin: 9px;
 }
 
+
 #grid {
+    width: 80%;
+    margin: 0 auto;
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 8vw;
     grid-row-gap: 20px;
-    padding: 70px 10px 0 10px;
+    padding: 70px 0px 0 0px;
+    margin-bottom: 100px;
 }
 
 #grid img{
-    width: 380px;
+    width: 100%;
     align-self: baseline;
     justify-self: center;
 }
@@ -164,7 +182,7 @@ html body{
 
 #grid-cont{
     width: 80%;
-    padding: 40px 0px 40px;
+    padding: 40px 0px 120px;
     margin: 0 auto;
     position: relative;
 }
@@ -177,9 +195,11 @@ html body{
 }
 
 #block1, #block2, #block3{
+    border: 1px solid red;
     width: 100%;
     height: 268px;
-    background: white;
+    opacity: 0.2;
+    filter: blur(2px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,39 +207,53 @@ html body{
     justify-content: flex-start;
     border-radius: 4px;
     position: relative;
+    transition: all 0.4s ease 0s;
 }
 
 #block1_header{
     position: absolute;
     padding-top: 90px;
+    visibility: hidden;
+}
+
+#block1_header:before{
+    content: "12";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+
+    background: #9CF5A6;
+    visibility: visible;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
 }
 
 #block1{
+    background: url("static/Description/psy_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     grid-column: 1 / 3;
     grid-row: 1;
 }
 
 #block2{
+    background: url("static/Description/emotions_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     grid-column: 1 / 2;
     grid-row: 2;
 }
 
 #block3{
+    background: url("static/Description/game_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     grid-column: 2 / 3;
     grid-row: 2;
-}
-
-#romb-cont{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 232px;
-}
-
-#logo_romb{
-    width: 173px;
-    height: 173px;
 }
 
 #block1:hover{
@@ -230,7 +264,8 @@ html body{
     background-size: cover;
     background-position: center;
     opacity: 0.6;
-    transition: all .4s ease-out;
+    filter: blur(0px);
+    transition: all 0.4s ease 0s;
 }
 
 #block2:hover{
@@ -241,6 +276,7 @@ html body{
     background-size: cover;
     background-position: center;
     opacity: 0.6;
+    filter: blur(0px);
     transition: all .4s ease-out;
 }
 
@@ -252,6 +288,7 @@ html body{
     background-size: cover;
     background-position: center;
     opacity: 0.6;
+    filter: blur(0px);
     transition: all .4s ease-out;
 }
 
@@ -259,9 +296,15 @@ html body{
     color: #FFFFFF;
     font-size: 46px;
     padding-top: 10px;
-    transition: all .8s ease-in-out;
+    transition: all 0.4s ease 0s;
     margin-top: 15px;
     opacity: 1;
+    visibility: visible;
+}
+
+#block1:hover:before #block1_header, #block2:hover #block1_header, #block3:hover #block1_header {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 #block1 div, #block2 div, #block3 div{
@@ -275,7 +318,7 @@ html body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 2.5s;
+    transition: all 0.6s ease 0s;
     opacity: 1;
 }
 
@@ -406,9 +449,7 @@ html body{
 }
 
 .img-left{
-    width: 70%;
-    align-self: center;
-    background-size: contain;
+    width: 40%;
 }
 
 .description{
@@ -498,6 +539,7 @@ html body{
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
+    cursor: pointer;
 }
 
 .learnMore-cont img{
@@ -613,6 +655,13 @@ html body{
     line-height: 24px;
     grid-row: 3/4;
     grid-column: 1/3;
+    transition: all 0.4s ease 0s;
+}
+
+#submit-contact:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
 }
 
 .form-text{
@@ -640,7 +689,7 @@ html body{
     line-height: 25px;
 }
 
-/* Contact form */
+/* Footer */
 #footer{
     display: flex;
     min-height: 90px;
