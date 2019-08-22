@@ -283,7 +283,7 @@
             <p class="subheader-light-black" id="AI-sub">Human emotions facial recognition systems reveal subconscious attitudes to provide accurate and expanded results</p>
         </div>
         <div class="interface-img-right">
-            <img src="static/EmotionAI.png" data-aos="fade-right"
+            <img src="static/EmotionAI.png" data-aos="fade-left"
                  data-aos-anchor=".interface-img-right"
                  data-aos-anchor-placement="top-center">
         </div>
@@ -302,13 +302,16 @@
     <div id="contact-chapter">
         <p class="header-light" id="contactHeader">Contact us</p>
         <p class="contact-text">And find out how to acquire the best talents</p>
-        <form id="form">
-            <input type="text" class="form-text" id="name" placeholder="Full name">
-            <input type="email" class="form-text" id="email" placeholder="Email">
-            <input type="tel" class="form-text" id="name" placeholder="Phone number">
-            <input type="text" class="form-text" id="name" placeholder="Company">
-            <button type="submit" id="submit-contact">Send</button>
+        <form id="form" action="contact.php" method="post">
+            <input type="text" class="form-text" id="name" name="name" placeholder="Full name">
+            <input type="email" class="form-text" id="email" name="email" placeholder="Email">
+            <input type="tel" class="form-text" id="name" name="phone" placeholder="Phone number">
+            <input type="text" class="form-text" id="name" name="company" placeholder="Company">
+            <button type="submit" id="submit-contact" value="Send">Send</button>
         </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS_contact.js"></script>
+
         <p id="privacyconfirm">By clicking Send, you indicate that you have read and understand our Privacy Policy and Terms of Use and represent that you are at least 13 years of age</p>
     </div>
     <div id="footer">

@@ -717,6 +717,7 @@ html body{
     letter-spacing: 0.2px;
     text-align: center;
     line-height: 25px;
+    margin: 0;
 }
 #Social img{
     height: 15px;
@@ -927,6 +928,11 @@ body {
         text-align: center;
         padding-right: 0;
         width: 100%;
+    }
+}
+@media screen and (min-width: 600px){
+    #traits-list{
+        list-style-type: none;
     }
 }
 
