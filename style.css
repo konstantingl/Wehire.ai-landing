@@ -723,3 +723,285 @@ html body{
     padding-right: 5px;
     cursor: pointer;
 }
+
+
+
+/* Header media */
+
+body {
+    margin: 0;
+}
+
+#header-mob-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(56,0,193);
+    padding: 10px;
+}
+
+#header-logo{
+    width: 160px;
+    height: 35px;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+        padding-top: 40px;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    #header-mob-cont img{}
+}
+
+/* header mobile */
+@media screen and (max-width: 600px) {
+    .header{
+        margin: 0;
+        background-image: none;
+        background-color: rgb(56,0,193);
+        height: 650px;
+    }
+    .info{
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+    .header-heavy{
+        font-size: 40px;
+    }
+    .header-heavy, .subheader-heavy{
+        width: 100%;
+    }
+}
+
+/*problems */
+@media screen and (max-width: 600px){
+    #grid{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0;
+        width: 90%;
+        padding-top: 5px;
+    }
+    #img-1,#img-2,#img-3{
+        display: flex;
+        align-self: center;
+    }
+    #text-1,#text-2,#text-3{
+        font-size: 15px;
+    }
+    #img-2{
+        grid-row: 2 / 3;
+    }
+
+    #img-3{
+        grid-row: 3/4;
+    }
+
+    #text-2{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    #text-3{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+}
+
+/* Headers, subheader, texts */
+
+@media screen and (max-width: 600px) {
+    .header-light{
+        padding-top: 100px;
+        font-size: 40px;
+    }
+    .subheader-light-black{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Features */
+@media screen and (max-width: 600px){
+    #block2{
+        grid-column: 1/3;
+    }
+    #block3{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}
+
+/* Gains */
+@media screen and (max-width: 600px){
+    #features_header{
+        flex-direction: column;
+    }
+    #switcher-cont{
+        height: 40px;
+        width: 60%;
+        padding: 0;
+        margin: 0;
+    }
+    .selector-buttons p{
+        font-size: 14px;
+    }
+    .selected-button p{
+        font-size: 14px;
+    }
+
+    .feature-line-3pt p, .feature-line-2pt p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+/* What we measure */
+@media screen and (max-width: 600px) {
+    #img-left-cont{
+        display: none;
+    }
+    #measure-description{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #measure-traits img{
+        display: none;
+    }
+    #traits-list{
+        list-style-type: square;
+    }
+    .text-content-black{
+        padding: 5px;
+    }
+    #measure-header, #measure-sub{
+        text-align: center;
+        padding-right: 0;
+        width: 100%;
+    }
+}
+
+/* Mobile_How does it work */
+@media screen and (min-width: 600px){
+    .carousel-inner{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #steps-cont{
+        display: none;
+    }
+    #subheader-steps{
+        width: 90%;
+    }
+    #myCarousel{
+        background-color: #FAFAFA;
+    }
+    .card-step{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2343484D' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .carousel-control-next-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2343484D' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+}
+
+/* Mobile_Interfaces */
+@media screen and (max-width: 600px) {
+    #interface-chapter {
+        display: block;
+    }
+    .interface-img-left, .interface-img-right{
+        width: 100%;
+    }
+    .description{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #interface-header, #AI-header{
+        font-size: 35px;
+    }
+    #interface-sub, #AI-sub{
+        width: 100%;
+        margin: 0;
+    }
+    #emotion-chapter{
+        flex-direction: column-reverse;
+    }
+}
+
+/* Mobile contacts */
+@media screen and (max-width: 600px) {
+    .form-text{
+        width: 100%;
+    }
+    #privacyconfirm{
+        width: 90%;
+    }
+}
+
+/* Mobile footer */
+@media screen and (max-width: 600px) {
+    #patent-text, #rights-text, #Social{
+        display: none;
+    }
+    .footer-text{
+        margin: 0;
+        text-align: right;
+    }
+}
