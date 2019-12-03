@@ -236,7 +236,7 @@ html body{
     letter-spacing: -1.77px;
     text-align: center;
     line-height: 58px;
-    padding-top: 146px;
+    padding-top: 100px;
     margin: 0 0px 46px 0px;
 }
 
@@ -987,6 +987,10 @@ html body{
         width: 90%;
         padding-top: 5px;
     }
+    #grid img{
+        width: 50%;
+        margin: 0 auto;
+    }
     #img-1,#img-2,#img-3{
         display: flex;
         align-self: center;
@@ -1043,6 +1047,8 @@ html body{
     .feature-line-3pt p, .feature-line-2pt p{
         font-size: 14px;
         line-height: 18px;
+        width: 100%;
+        margin-top: 15px;
     }
     #feature-line-cell-3 img{
         width: 60px;
@@ -1063,6 +1069,7 @@ html body{
     #measure-grid{
         width: 80%;
         margin: 0 auto;
+        padding-bottom: 30px;
     }
     #measure-traits img{
         display: none;
@@ -1075,8 +1082,8 @@ html body{
     }
     #measure-header, #measure-sub{
         text-align: center;
-        padding-right: 0;
         width: 100%;
+        padding: 0;
     }
 }
 @media screen and (min-width: 600px){
