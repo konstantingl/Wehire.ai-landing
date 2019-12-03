@@ -9,33 +9,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div id="header-mob-cont">
-    <img id="header-logo" src="static/Header/Logo.png">
-    <div class="topnav" id="myTopnav">
-        <a href="#Employers" class="header_selectors">Employers</a>
-        <a href="#Candidates" class="header_selectors">Candidates</a>
-        <a href="#Educators" class="header_selectors">Educators</a>
-        <a href="#Educators" class="header_selectors">Log in</a>
-        <a href="#Educators" class="green-round-btn">Sign up</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+<!--<div id="myNav" class="overlay">-->
+<!--    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+<!--    <div class="overlay-content">-->
+<!--        <a href="#Employers" class="header_selectors">Employers</a>-->
+<!--        <a href="#Candidates" class="header_selectors">Candidates</a>-->
+<!--        <a href="#Educators" class="header_selectors">Educators</a>-->
+<!--        <a href="#Educators" class="header_selectors">Log in</a>-->
+<!--        <a href="#Educators" class="green-round-btn">Sign up</a>-->
+<!--    </div>-->
+<!--</div>-->
+<div id="header-menu">
+<img id="header-logo" src="static/Header/logo-white.png">
+<!--<div class="pc-version-menu">-->
+<!--    <a href="#Employers" class="header_selectors">Employers</a>-->
+<!--    <a href="#Candidates" class="header_selectors">Candidates</a>-->
+<!--    <a href="#Educators" class="header_selectors">Educators</a>-->
+<!--    <a href="#Educators" class="header_selectors">Log in</a>-->
+<!--    <a href="#Educators" class="green-round-btn">Sign up</a>-->
+<!--</div>-->
+<!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>-->
 </div>
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        var img = document.getElementById("header-logo");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
     }
 </script>
 
@@ -44,10 +51,12 @@
     <div class="header">
         <div class="info">
             <p class="header-heavy">Hiring with<br>an Emotional AI</p>
-            <p class="subheader-heavy">Meet the best candidates with your top-performers’ mix of aptitudes and traits,
+            <p class="subheader-heavy">Meet the best candidates with your top-performers&#39; mix of aptitudes and traits,
                 based on 10,000+ data points of real-time behaviour and emotions
                 collected via game-based assessment</p>
-            <button class="green-round-btn">Learn more</button>
+            <div class="green-round-btn"><a href="#contact-chapter">Learn more</a>
+            </div>
+
         </div>
     </div>
     <div name="problems" class="chapter-white">
@@ -62,47 +71,54 @@
             <div id="img-3">
                 <img src="static/Problems/problem3.png">
             </div>
-            <p id="text-1" class="subheader-light-black"><b>46%</b> of new hires fail within 18 months</p>
-            <p id="text-2" class="subheader-light-black">Replacement costs up to <b>$7,650</b> per employee in US</p>
-            <p id="text-3" class="subheader-light-black">New generation change jobs more frequently, up to <b>10-14</b> by the age of 38</p>
+            <div id="text-1">
+                <p class="subheader-blue">High turnover</p>
+                <p class="subheader-light-black"><b>46%</b> of new hires fail within 18 months</p></div>
+            <div id="text-1">
+                <p class="subheader-blue">Lack of soft skills</p>
+                <p class="subheader-light-black"><b>89%</b> of the time hires fail for attitudinal reasons and only 11% of the time for a lack of skill</p></div>
+            <div id="text-1">
+                <p class="subheader-blue">Financial losses</p>
+                <p class="subheader-light-black">The cost of a bad hire reaches <b>$240,000</b></p></div>
         </div>
     </div>
-    <div name="description" class="chapter-grey">
-        <p class="header-light">Intelligent. Data-driven. Efficient.</p>
-        <p class="subheader-light-black" id="trigger-block1">WeHire.ai is a data-driven smart hiring solution - the synergy of <br>psychometric, Artificial Intellegence and game technology</p>
-        <div id="grid-cont">
-            <div id="grid_description">
-                <div id="block1" data-aos="fade-up"
-                     data-aos-anchor="#trigger-block1"
-                     data-aos-anchor-placement="top-center">
-                    <p class="subheader-light-black" id="block1_header">Psychometric</p>
-                    <div>
-                        <p class="small-text-white">Detailed psychometric assessment</p>
-                        <p class="small-text-white">Statistically validated data</p>
-                    </div>
-                </div>
-                <div id="block2" data-aos="fade-up-right"
-                     data-aos-anchor="#block1"
-                     data-aos-anchor-placement="top-center">
-                    <p class="subheader-light-black" id="block1_header">Emotion AI</p>
-                    <div>
-                        <p class="small-text-white">Neural networks analysis</p>
-                        <p class="small-text-white">Automated machine learning algorithms</p>
-                        <p class="small-text-white">Candidate’s real-time emotions</p>
-                    </div>
-                </div>
-                <div id="block3" data-aos="fade-up-left"
-                     data-aos-anchor="#block1"
-                     data-aos-anchor-placement="top-center">
-                    <p class="subheader-light-black" id="block1_header">Game - tech</p>
-                    <div>
-                        <p class="small-text-white">23 neuroscience-based games</p>
-                        <p class="small-text-white">10,000+ data points of behaviour collected</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+    <div name="description" class="chapter-blue">
+        <p class="header-wight">Intelligent. Data-driven. Efficient.</p>
+        <p class="subheader-light-wight" id="trigger-block1">WeHire.ai is a data-driven smart hiring solution - the synergy of <br>psychometric, Artificial Intellegence and game technology</p>
+        <div id="desc-rounds"><img src="static/Description/desc-rounds.png"></div>
+<!--        <div id="grid-cont">-->
+<!--            <div id="grid_description">-->
+<!--                <div id="block1" data-aos="fade-up"-->
+<!--                     data-aos-anchor="#trigger-block1"-->
+<!--                     data-aos-anchor-placement="top-center">-->
+<!--                    <p class="subheader-light-black" id="block1_header">Psychometric</p>-->
+<!--                    <div>-->
+<!--                        <p class="small-text-white">Detailed psychometric assessment</p>-->
+<!--                        <p class="small-text-white">Statistically validated data</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div id="block2" data-aos="fade-up-right"-->
+<!--                     data-aos-anchor="#block1"-->
+<!--                     data-aos-anchor-placement="top-center">-->
+<!--                    <p class="subheader-light-black" id="block1_header">Emotion AI</p>-->
+<!--                    <div>-->
+<!--                        <p class="small-text-white">Neural networks analysis</p>-->
+<!--                        <p class="small-text-white">Automated machine learning algorithms</p>-->
+<!--                        <p class="small-text-white">Candidate’s real-time emotions</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div id="block3" data-aos="fade-up-left"-->
+<!--                     data-aos-anchor="#block1"-->
+<!--                     data-aos-anchor-placement="top-center">-->
+<!--                    <p class="subheader-light-black" id="block1_header">Game - tech</p>-->
+<!--                    <div>-->
+<!--                        <p class="small-text-white">23 neuroscience-based games</p>-->
+<!--                        <p class="small-text-white">10,000+ data points of behaviour collected</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </div>-->
     </div>
     <div name="features" id="features-block" class="chapter-white">
         <div id="features_header">
@@ -110,60 +126,86 @@
             <div id="switcher-cont">
                 <div class="selector-buttons" id="sw1" onclick="CurrentSlide(0)"><p>employer</p></div>
                 <div class="selector-buttons" id="sw2" onclick="CurrentSlide(1)"><p>candidate</p></div>
-                <div class="selector-buttons" id="sw3" onclick="CurrentSlide(2)"><p>educator</p></div>
+<!--                <div class="selector-buttons" id="sw3" onclick="CurrentSlide(2)"><p>educator</p></div>-->
             </div>
         </div>
         <div class="slider">
             <div class="item">
                 <div class="line1-cont">
-                    <img src="static/Features/1-3.png">
                     <div class="feature-line-3pt">
-                        <p class="subheader-light-black">Efficient talent-acquisition and management</p>
-                        <p class="subheader-light-black">Strong corporate culture</p>
-                        <p class="subheader-light-black">Improvement in candidates quality</p>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/1.png">
+                        </div>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/2.png">
+                        </div>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/3.png">
+                        </div>
+                        <p class="subheader-light-black" id="feature-line-cell-3">Efficient talent-acquisition and management</p>
+                        <p class="subheader-light-black" id="feature-line-cell-3">Strong corporate culture</p>
+                        <p class="subheader-light-black" id="feature-line-cell-3">Improvement in candidates quality</p>
                     </div>
                 </div>
                 <div class="line1-cont">
-                    <img src="static/Features/4-6.png">
                     <div class="feature-line-3pt">
-                        <p class="subheader-light-black">Lower employee turnover </p>
-                        <p class="subheader-light-black">Reduction of bad hire costs, operational burden and recruitment timing </p>
-                        <p class="subheader-light-black">Growth of brand loyalty</p>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/4.png">
+                        </div>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/5.png">
+                        </div>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/6.png">
+                        </div>
+                        <p class="subheader-light-black" id="feature-line-cell-3">Lower employee turnover </p>
+                        <p class="subheader-light-black" id="feature-line-cell-3">Reduction of bad hire costs, operational burden and recruitment timing </p>
+                        <p class="subheader-light-black" id="feature-line-cell-3">Growth of brand loyalty</p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="line1-cont">
-                    <img src="static/Features/1-2.png">
                     <div class="feature-line-2pt">
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/2-1.png">
+                        </div>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/2-2.png">
+                        </div>
                         <p class="subheader-light-black">Great personalization</p>
                         <p class="subheader-light-black">100% prompt feedback </p>
                     </div>
                 </div>
                 <div class="line1-cont">
-                    <img src="static/Features/3-4.png">
                     <div class="feature-line-2pt">
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/2-3.png">
+                        </div>
+                        <div class="subheader-light-black" id="feature-line-cell-3">
+                            <img src="static/Features/2-4.png">
+                        </div>
                         <p class="subheader-light-black" id="feature-line-cell">Detailed personal profile </p>
                         <p class="subheader-light-black" id="feature-line-cell">Enjoyable stress-free experience </p>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="line1-cont">
-                    <img src="static/Features/1-2.png">
-                    <div class="feature-line-2pt">
-                        <p class="subheader-light-black" id="feature-line-cell">Higher students’ academic results, satisfaction and lower dropout rates</p>
-                        <p class="subheader-light-black" id="feature-line-cell">More internship and employment offers, better perspectives to find a fulfilling jobs</p>
-                    </div>
-                </div>
-                <div class="line1-cont">
-                    <img src="static/Features/3-4.png">
-                    <div class="feature-line-2pt">
-                        <p class="subheader-light-black" id="feature-line-cell">Students’ academic and career success lead to higher ratings of educational institution and programs </p>
-                        <p class="subheader-light-black" id="feature-line-cell">The higher ratings, the better students, and the more research budgets</p>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="item">-->
+<!--                <div class="line1-cont">-->
+<!--                    <img src="static/Features/1-2.png">-->
+<!--                    <div class="feature-line-2pt">-->
+<!--                        <p class="subheader-light-black" id="feature-line-cell">Higher students’ academic results, satisfaction and lower dropout rates</p>-->
+<!--                        <p class="subheader-light-black" id="feature-line-cell">More internship and employment offers, better perspectives to find a fulfilling jobs</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="line1-cont">-->
+<!--                    <img src="static/Features/3-4.png">-->
+<!--                    <div class="feature-line-2pt">-->
+<!--                        <p class="subheader-light-black" id="feature-line-cell">Students’ academic and career success lead to higher ratings of educational institution and programs </p>-->
+<!--                        <p class="subheader-light-black" id="feature-line-cell">The higher ratings, the better students, and the more research budgets</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
     <div name="whatwemeasure" class="chapter-white" id="whatmeasure-cont">
@@ -172,46 +214,51 @@
         </div>
         <div class="description" id="measure-description">
             <p class="header-light" id="measure-header">What we measure</p>
-            <p class="subheader-light-black" id="measure-sub">We look into attitudes that doom your Company’s success by focusing on the right indicators and measure them</p>
+            <p class="subheader-light-black" id="measure-sub">We look into attitudes that doom your Company&#39;s success by focusing on the right indicators and measure them</p>
             <div id="measure-traits">
-                <img src="static/WhatMeasure/1-5.png">
-                <ul id="traits-list">
-                    <li class="text-content-black">Cognitive abilities</li>
-                    <li class="text-content-black">Emotional intelligence</li>
-                    <li class="text-content-black">Motivation</li>
-                    <li class="text-content-black">Temperament</li>
-                    <li class="text-content-black">Innovative thinking and many more</li>
-                </ul>
+                <div id="measure-grid">
+                    <p class="measure-number">1</p>
+                    <div> <p class="text-content-black">Cognitive abilities</p></div>
+                    <p class="measure-number">2</p>
+                    <div> <p class="text-content-black">Emotional intelligence</p></div>
+                    <p class="measure-number">3</p>
+                    <div> <p class="text-content-black">Motivation</p></div>
+                    <p class="measure-number">4</p>
+                    <div> <p class="text-content-black">Temperament</p></div>
+                    <p class="measure-number">5</p>
+                    <div> <p class="text-content-black">Innovative thinking and many more</p></div>
+                </div>
+
             </div>
         </div>
     </div>
     <div name="steps" class="chapter-grey">
         <p class="header-light">How does it work</p>
-        <p class="subheader-light-black" id="subheader-steps">We execute neural networks analysis of your employees’ data to build predictive models and algorithms that will help identify and hire potential top-performers with the same mix of aptitudes and traits as your top.</p>
+        <p class="subheader-light-black" id="subheader-steps">We execute neural networks analysis of your employees&#39; data to build predictive models and algorithms that will help identify and hire potential top-performers with the same mix of aptitudes and traits as your top.</p>
         <div id="steps-cont">
             <div class="card-step">
                 <p class="step-header">Step one</p>
-                <p class="step-text">WeHire.ai analyzes the collected aggregated anonymized data, recognizes unique patterns and trends and constructs your top-performers’ profiles</p>
-                <div class="learnMore-cont">
-                    <p class="learnMore-text">Learn more</p>
-                    <img src="static/HowWork/arrow.png">
-                </div>
+                <p class="step-text">WeHire.ai analyzes the collected aggregated anonymized data, recognizes unique patterns and trends and constructs your top-performers&#39; profiles</p>
+<!--                <div class="learnMore-cont">-->
+<!--                    <p class="learnMore-text">Learn more</p>-->
+<!--                    <img src="static/HowWork/arrow.png">-->
+<!--                </div>-->
             </div>
             <div class="card-step">
                 <p class="step-header">Step two</p>
                 <p class="step-text">Candidates play Wehire.ai games designed specially to uncover personality traits</p>
-                <div class="learnMore-cont">
-                    <p class="learnMore-text">Learn more</p>
-                    <img src="static/HowWork/arrow.png">
-                </div>
+<!--                <div class="learnMore-cont">-->
+<!--                    <p class="learnMore-text">Learn more</p>-->
+<!--                    <img src="static/HowWork/arrow.png">-->
+<!--                </div>-->
             </div>
             <div class="card-step">
                 <p class="step-header">Step three</p>
-                <p class="step-text">Wehire.ai analyzes candidates’ data, compares their profiles to those of your top-performers to identify best matches and reveals them to you for interviews and hiring</p>
-                <div class="learnMore-cont">
-                    <p class="learnMore-text">Learn more</p>
-                    <img src="static/HowWork/arrow.png">
-                </div>
+                <p class="step-text">Wehire.ai analyzes candidates&#39; data, compares their profiles to those of your top-performers to identify best matches and reveals them to you for interviews and hiring</p>
+<!--                <div class="learnMore-cont">-->
+<!--                    <p class="learnMore-text">Learn more</p>-->
+<!--                    <img src="static/HowWork/arrow.png">-->
+<!--                </div>-->
             </div>
         </div>
     </div>
@@ -230,42 +277,39 @@
                 <div class="card-step">
                     <p class="step-header">Step one</p>
                     <p class="step-text">WeHire.ai analyzes the collected aggregated anonymized data, recognizes unique patterns and trends and constructs your top-performers’ profiles</p>
-                    <div class="learnMore-cont">
-                        <p class="learnMore-text">Learn more</p>
-                        <img src="static/HowWork/arrow.png">
-                    </div>
+<!--                    <div class="learnMore-cont">-->
+<!--                        <p class="learnMore-text">Learn more</p>-->
+<!--                        <img src="static/HowWork/arrow.png">-->
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="card-step">
                     <p class="step-header">Step two</p>
                     <p class="step-text">Candidates play Wehire.ai games designed specially to uncover personality traits</p>
-                    <div class="learnMore-cont">
-                        <p class="learnMore-text">Learn more</p>
-                        <img src="static/HowWork/arrow.png">
-                    </div>
+<!--                    <div class="learnMore-cont">-->
+<!--                        <p class="learnMore-text">Learn more</p>-->
+<!--                        <img src="static/HowWork/arrow.png">-->
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="card-step">
                     <p class="step-header">Step three</p>
                     <p class="step-text">Wehire.ai analyzes candidates’ data, compares their profiles to those of your top-performers to identify best matches and reveals them to you for interviews and hiring</p>
-                    <div class="learnMore-cont">
-                        <p class="learnMore-text">Learn more</p>
-                        <img src="static/HowWork/arrow.png">
-                    </div>
+<!--                    <div class="learnMore-cont">-->
+<!--                        <p class="learnMore-text">Learn more</p>-->
+<!--                        <img src="static/HowWork/arrow.png">-->
                 </div>
             </div>
         </div>
 
         <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon black"></span>
-        </a>
-    </div>
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon black"></span>
+            </a>
+        </div>
     <div name="interfaces" class="chapter-white" id="interface-chapter" >
         <div class="interface-img-left">
             <img src="static/Interfaces.png" data-aos="fade-right"
@@ -299,20 +343,24 @@
             <p class="subheader-light-black" id="interface-sub">Reputable scientifically-proven techniques assess risk taking propensity and other crucial attitudes and traits</p>
         </div>
     </div>
-    <div id="contact-chapter">
+    <div id="contact-chapter" name="contact-chapter">
         <p class="header-light" id="contactHeader">Contact us</p>
         <p class="contact-text">And find out how to acquire the best talents</p>
-        <form id="form" action="contact.php" method="post">
+        <form id="form" action="contact.php" method="post" onsubmit="submitMessage()">
             <input type="text" class="form-text" id="name" name="name" placeholder="Full name">
             <input type="email" class="form-text" id="email" name="email" placeholder="Email">
             <input type="tel" class="form-text" id="name" name="phone" placeholder="Phone number">
             <input type="text" class="form-text" id="name" name="company" placeholder="Company">
             <button type="submit" id="submit-contact" value="Send">Send</button>
+            <p id="privacyconfirm">By clicking Send, you indicate that you have read and understand our Privacy Policy and Terms of Use and represent that you are at least 13 years of age</p>
         </form>
+        <script>
+            function submitMessage() {
+                alert("The form was submitted. We will contact you soon!");
+            }
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="JS_contact.js"></script>
-
-        <p id="privacyconfirm">By clicking Send, you indicate that you have read and understand our Privacy Policy and Terms of Use and represent that you are at least 13 years of age</p>
     </div>
     <div id="footer">
         <div id="logo-footer">
@@ -320,7 +368,7 @@
         </div>
         <p class="footer-text" id="rights-text">© 2019 Wehire.ai All rights reserved</p>
         <p class="footer-text" id="patent-text">Patent pending</p>
-        <p class="footer-text">+7 (915) 478 05 00, igor@Wehire.ai</p>
+        <p class="footer-text">igor@Wehire.ai</p>
         <div id="Social">
             <img src="static/Facebook.png">
             <img src="static/Twitter.png">
